@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         clickMeButton.setOnClickListener {
             var editTextValue = editTextView.text.toString()
-            var newStr = "Hello $editTextValue"
+            displayTextView.text = "Hello, $editTextValue"
 
         }
 
