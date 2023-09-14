@@ -2,6 +2,7 @@ package edu.temple.helloworld
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -21,8 +22,12 @@ class MainActivity : AppCompatActivity() {
         displayTextView = findViewById(R.id.displayTextView)
         editTextView = findViewById(R.id.nameEditText)
         clickMeButton = findViewById(R.id.clickMeButton)
-        
-        // Respond to button click event per specifications
+
+        clickMeButton.setOnClickListener {
+            var editTextValue = editTextView.text.toString()
+            var newStr = "Hello $editTextValue"
+
+        }
 
 
     }
